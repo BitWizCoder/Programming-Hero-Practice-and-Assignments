@@ -1,1 +1,1 @@
-# Programming-Hero-Practice-and-Assignments
+## in this repo i've added all my practices from programming hero.
