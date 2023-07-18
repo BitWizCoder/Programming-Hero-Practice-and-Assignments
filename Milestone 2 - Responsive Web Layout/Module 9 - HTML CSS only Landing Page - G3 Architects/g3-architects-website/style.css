@@ -126,14 +126,150 @@ nav li .active {
     height: 700px;
 }
 
+/* Team */
+.team {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.members {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.team .content h2 {
+    margin-bottom: 1rem;
+}
+
+.team .content p {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1rem;
+}
+
 /* Features */
 .features {
     display: flex;
-    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4rem;
 }
 
-.features .members {
+.features .box {
+    max-width: 586px;
+    height: 171px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.features .box h3 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.features .box p {
+    color: #727272;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+/* floating card */
+.experience {
+    display: inline-block;
+    background-color: #FF900E;
+    padding: 1rem 1.5rem;
+    text-align: center;
+    margin-top: -5rem;
+    margin-left: -2rem;
+}
+
+.img p {
+    color: #fff;
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.img p span {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* Facts */
+.facts {
+    margin: 5rem auto;
+}
+
+.facts p {
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    max-width: 542px;
+}
+
+.facts .cards {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.facts .card {
+    border: 1px solid #FF900E;
+    padding: 1rem 1.5rem;
+    border-radius: .3rem;
+}
+
+/* sponsors */
+.sponsors {
+    text-align: center;
+}
+
+.sponsors h2 {
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.sponsors p {
+    max-width: 542px;
+    margin: 0 auto;
+    color: #727272;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.sponsors .logos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.5rem;
+}
+
+/* Footer */
+.footer {
+    height: 70px;
+    border-radius: 8px;
+    background: #FFF4E7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
