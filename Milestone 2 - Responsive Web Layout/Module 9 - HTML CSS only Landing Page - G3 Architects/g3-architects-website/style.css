@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;700&display=swap');
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Components */
+.btn-primary {
+    border: none;
+    margin-bottom: 1.5rem;
+    background-color: #FF900E;
+    color: #fff;
+    padding: .8rem 1rem;
+    border-radius: .2rem;
+    border: 2px solid #FF900E;
+    font-size: 1rem;
+}
+
+.btn-primary:hover {
+    background-color: transparent;
+    color: #FF900E;
+    cursor: pointer;
+}
+
+/* Header */
+.hero {
+    background: rgba(255, 144, 14, 0.10);
+    padding-bottom: 1rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    color: #303030;
+}
+
+header .logo span {
+    color: #FF900E;
+}
+
+/* Nav */
+nav ul {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+nav li {
+    list-style: none;
+    font-size: 1.1rem;
+}
+
+nav li a {
+    color: #303030;
+    text-decoration: none;
+    padding: .6rem .8rem;
+    border-radius: .2rem;
+}
+
+nav li a:hover {
+    background-color: #FF900E;
+    color: #fff;
+}
+
+nav li .active {
+    background-color: #FF900E;
+    color: #fff;
+}
+
+/* Hero */
+.hero-main {
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 780px;
+    margin: auto;
+}
+
+.hero-title {
+    color: #131313;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+.hero-paragraph {
+    color: var(--dark-03, #727272);
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    margin-bottom: 1.4rem;
+}
+
+.hero-img {
+    background: url(./images/banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .3rem;
+    margin-bottom: 2rem;
+    max-width: 1200px;
+    height: 700px;
+}
+
+/* Features */
+.features {
+    display: flex;
+    flex-direction: row;
+}
+
+.features .members {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
