@@ -7,11 +7,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
     <title>Penguin fashion with tailwind</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="bg-[#FFFBF0]">
-        <nav class="flex justify-between pt-5 mx-auto w-5/6 flex-col items-center md:flex-row">
+        <nav class="flex justify-between pt-5 w-5/6 flex-col items-center md:flex-row max-w-6xl mx-auto">
             <img src="./images/icons/logo.png" alt="" class="logo">
             <ul class="flex gap-5">
                 <li><a href="#">Home</a></li>
@@ -20,9 +23,9 @@
                 <li><a href="#">Contact us</a></li>
             </ul>
         </nav>
-        <section class="hero flex justify-between items-center mt-8 mx-auto w-5/6 flex-col md:flex-row">
+        <section class="hero flex justify-between items-center mt-8 w-5/6 flex-col md:flex-row  max-w-6xl mx-auto">
             <div class="content">
-                <h1 class="text-6xl font-semibold text-[#FABE4C] mb-5">Be the Penguins <br> <span
+                <h1 class="text-6xl font-semibold text-[#FABE4C] mb-5 font-bebas-neue">Be the Penguins <br> <span
                         class="text-[#363958]">of Winter</span></h1>
                 <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the printing
                     <br>and typesetting industry.
@@ -38,43 +41,45 @@
     </header>
 
     <!-- Women Jacket -->
-    <section class="flex justify-around mt-14">
-        
-        <div class="max-w-xs">
-            <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
-            <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
-            <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.</p>
-            <section class="flex items-center">
-                <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
-                <button
-                    class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
-                    NOW</button>
-            </section>
-        </div>
-        <div class="max-w-xs">
-            <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
-            <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
-            <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.</p>
-            <section class="flex items-center">
-                <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
-                <button
-                    class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
-                    NOW</button>
-            </section>
-        </div>
-        <div class="max-w-xs">
-            <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
-            <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
-            <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.</p>
-            <section class="flex items-center">
-                <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
-                <button
-                    class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
-                    NOW</button>
-            </section>
+    <section class="mt-14  max-w-6xl mx-auto">
+        <h2 class="font-bebas-neue">W0Man Jacket</h2>
+        <div class="flex justify-around flex-wrap mt-5">
+            <div class="max-w-xs">
+                <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
+                <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
+                <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+                <section class="flex items-center">
+                    <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
+                    <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
+                        NOW</button>
+                </section>
+            </div>
+            <div class="max-w-xs">
+                <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
+                <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
+                <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+                <section class="flex items-center">
+                    <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
+                    <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
+                        NOW</button>
+                </section>
+            </div>
+            <div class="max-w-xs">
+                <img src="./images/jacket-1.png" alt="" class="max-w-[250px] bg-[#F1F1F1] p-5 rounded-md">
+                <h2 class="text-[24px] font-semibold text-[#363958]">Yellow Coat Jacket </h2>
+                <p class="text-[#3E3E3E]">Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry.</p>
+                <section class="flex items-center">
+                    <p class="text-[#FABE4C] text-[1.5rem] font-semibold">$234</p>
+                    <button
+                        class="bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white font-bold py-2 px-4 rounded mt-5 hover:bg-blue-700">BUY
+                        NOW</button>
+                </section>
+            </div>
         </div>
     </section>
 </body>
