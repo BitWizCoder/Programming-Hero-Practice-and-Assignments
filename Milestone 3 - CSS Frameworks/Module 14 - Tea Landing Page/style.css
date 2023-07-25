@@ -1,0 +1,9 @@
+/* Google font */
+.manrope {
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Global font color */
+h1, h2, h3, p {
+    color: rgb(31 41 55);
+}
