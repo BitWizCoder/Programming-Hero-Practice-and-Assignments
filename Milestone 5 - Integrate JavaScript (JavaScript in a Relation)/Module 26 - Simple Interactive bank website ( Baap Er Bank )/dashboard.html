@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+        <title>Bank Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1 class="text-center my-10 text-3xl">Bank Dashboard | Manage all your activities here.</h1>
+    </header>
+    <main class="flex flex-col items-center">
+        <section class="flex gap-5 flex-wrap justify-center">
+            <div class="bg-green-400 py-10 px-24 rounded-md text-white text-center">
+                <h2 class="text-2xl">Deposit</h2>
+                <h2 class="text-5xl" id="deposit">10</h2>
+            </div>
+            <div class="bg-yellow-500 py-10 px-24 rounded-md text-white text-center">
+                <h2 class="text-2xl">Withdraw</h2>
+                <h2 class="text-5xl" id="withdraw"></h2>
+            </div>
+            <div class="bg-violet-400 py-10 px-24 rounded-md text-white text-center">
+                <h2 class="text-2xl">Balance</h2>
+                <h2 class="text-5xl" id="balance"></h2>
+            </div>
+        </section>
+        <section class="flex flex-wrap justify-center gap-10 mt-14">
+            <div class="bg-yellow-500 p-20 rounded-md">
+                <h2 class="text-white text-2xl mb-3">Please Deposit</h2>
+                <input class=" px-4 py-2 rounded-sm" type="number" name="" id="deposit-input" placeholder="Amount you want to Deposit">
+                <button class="bg-violet-400 text-white px-4 py-2 rounded-sm" id="deposit-btn">Deposit</button>
+            </div>
+            <div class="bg-green-400 p-20 rounded-md">
+                <h2 class="text-white text-2xl mb-3">Please Withdraw</h2>
+                <input class="px-4 py-2 rounded-sm" type="number" name="" id="withdraw-input" placeholder="Amount you want to Withdraw">
+                <button class="bg-violet-400 text-white px-4 py-2 rounded-sm" id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="dashboard.js"></script>
+</body>
+</html>
